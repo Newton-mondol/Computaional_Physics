@@ -36,7 +36,7 @@ def simpson(n, fig):
     for i in range(1, len(y1)-1, 2):
         odd = odd + y1[i];
         
-    p.for i in range(2, len(y1)-1, 2):
+    for i in range(2, len(y1)-1, 2):
         even = even +y1[i];
     
     result = (h/3)*(y1[0] + 4*odd + 2*even + y1[len(y1)-1] );
