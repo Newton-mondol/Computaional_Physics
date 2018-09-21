@@ -1,4 +1,4 @@
-# Determine value of a algebraic function at any point
+# Determination of the value of a algebraic function at any point
 def f_value(fun, arg):
     return fun(arg)
 
@@ -9,7 +9,7 @@ def deri(f, arg):
     return (f_value(f, arg + 0.00001) - f_value(f, arg)) / 0.00001
 
 
-# Determination of root around any point using Newton-Raphson root finding mathod
+# Determination of root around any point using Newton-Raphson root finding method
 def n_r_root(fun, arg):
     for i in range(100):
         arg = arg - (f_value(fun, arg) / deri(fun, arg))
